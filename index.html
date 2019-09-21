@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="app.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+
+</head> 
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                <div class="card-weather">
+                    <div class="row card-weather-content">
+                        <div class="col-xs-9 text-left">
+                            <div class="card-weather-header-title t-shadow" id="city"></div>
+                            <div class="card-weather-separator"></div>
+                            <div class="card-weather-header-subtitle t-shadow">
+                                <script>document.write(dataAtualFormatada())</script> <br>
+                                <span id="status"></span>
+                            </div>
+                            <div class="card-weather-header-subtitle-two t-shadow">
+                                <i class="fa fa-wind t-shadow" style="color: #fff"></i> 
+                                <span> 16 </span> <small>KM/H</small>
+                            </div>
+                        </div>
+    
+                        <div class="col-xs-3">
+                            <i class="fa fa-cloud-showers-heavy fa-5x t-shadow pulse" style="color: #fff"></i>
+
+                            <h3 class="temp t-shadow">12°</h3>
+                        </div>
+                    </div>
+                    <div class="row card-weather-footer">  
+                        <div class="col-md-4">
+                            <div class="card-weather-footer-name t-shadow text-center">
+                                <h3>MON</h3>
+                                <div class="card-weather-footer-icon">
+                                    <i class="fa fa-cloud-meatball fa-3x t-shadow pulse"></i>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4">
+                            <div class="card-weather-footer-name t-shadow text-center">
+                                <h3>TUE</h3>
+                                <div class="card-weather-footer-icon">
+                                    <i class="fa fa-sun fa-3x t-shadow rotate"></i>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4">
+                            <div class="card-weather-footer-name t-shadow text-center">
+                                <h3>WED</h3>
+                                <div class="card-weather-footer-icon">
+                                    <i class="fa fa-cloud-moon fa-3x t-shadow"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
